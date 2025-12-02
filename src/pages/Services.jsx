@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 // import wareBg from '../assets/images/ware-bg.png';
 import img4 from '../assets/images/img4.png';
-import About2 from './about';
+import About from './About';
 
 const Services = () => {
   return (
@@ -115,7 +115,7 @@ const Services = () => {
           </motion.div>
         </div>
       </motion.section>
-      <About2 />
+      <About />
     </div>
   );
 };

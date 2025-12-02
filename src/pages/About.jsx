@@ -40,7 +40,7 @@ const technologies = [
   "Vercel",
 ];
 
-const About2 = () => {
+const About = () => {
   return (
     <div
       id="about"
@@ -173,4 +173,4 @@ const About2 = () => {
     </div>
   );
 };
-export default About2;
+export default About;
