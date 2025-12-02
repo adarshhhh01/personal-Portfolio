@@ -1,6 +1,14 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#0B0F0A] text-gray-300 py-12 px-6 md:px-20">
+    <motion.footer
+      className="w-full bg-[#0B0F0A] text-gray-300 py-12 px-6 md:px-20"
+      initial={{ opacity: 0, y: 18 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
 
         {/* Logo + Copyright */}
@@ -16,7 +24,7 @@ const Footer = () => {
             <li className="hover:text-white transition">Home</li>
             <li className="hover:text-white transition">Resume</li>
             <li className="hover:text-white transition">Lets talk</li>
-            <li className="hover:text-white transition">Github</li>
+            <li className="hover:text-white transition"><a href="https://github.com/adarshhhh01">Github</a></li>
           </ul>
         </div>
 
@@ -49,7 +57,7 @@ const Footer = () => {
           <p className="text-xs opacity-60 mt-5 text-right">All rights reserved.</p>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

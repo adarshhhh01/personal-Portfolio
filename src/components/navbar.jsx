@@ -1,9 +1,15 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 const navbar = () => {
   return (
     <div>
-         <nav className="grid grid-cols-3 gap-3 w-full fixed z-30  -top-3 mt-0 pt-0 ">
+         <motion.nav
+           className="grid grid-cols-3 gap-3 w-full fixed z-30  -top-3 mt-0 pt-0 "
+           initial={{ opacity: 0, y: -8 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.6, ease: 'easeOut' }}
+         >
             <span className="p-2 m-3 text-gray-800 md:text-[20px] font-bold ">Adarsh Namdeo</span>
             <li className="grid grid-cols-5 gap-auto p-2 m-3 text-gray-600 font-bold backdrop-blur-xxs">
               <ul><a href="#home" className='hover:border border-gray-700 rounded-2xl px-3 py-1'>Home</a></ul>
@@ -16,7 +22,7 @@ const navbar = () => {
               <button className="bg-gray-600 text-white rounded-lg ">Resume</button>
               <button className="bg-gray-600 text-white rounded-lg">Lets Talk</button>
             </div>
-          </nav>
+          </motion.nav>
           </div>
   )
 }

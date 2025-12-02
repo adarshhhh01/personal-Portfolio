@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from 'framer-motion';
 
 const projects = [
   {
@@ -21,7 +22,13 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="min-h-screen w-full bg-gray-300 text-gray-700 flex items-center">
+    <motion.section
+      id="projects"
+      className="min-h-screen w-full bg-gray-300 text-gray-700 flex items-center"
+      initial={{ opacity: 0, y: 18 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
       <div className="max-w-6xl mx-auto w-full px-6 py-16">
         {/* Heading */}
         <div className="text-center mb-10">
@@ -80,7 +87,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
