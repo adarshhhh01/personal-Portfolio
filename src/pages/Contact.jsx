@@ -252,7 +252,7 @@ const Contact = () => {
                 className="flex items-center gap-4 "
               >
                 <div className="h-10 w-10 rounded-full bg-gray-400 flex items-center justify-center text-[#11160f] text-lg">
-                  <i class="fi fi-brands-linkedin"></i>
+                  <i className="fi fi-brands-linkedin"></i>
                 </div>
                 <div className="">
                   <p className="text-xs text-gray-500 uppercase">LinkedIn</p>
