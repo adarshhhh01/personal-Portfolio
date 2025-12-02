@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+
+.stroke {
+  -webkit-text-stroke: 3px black; /* outline width & color */
+}
+
