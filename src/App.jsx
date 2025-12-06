@@ -3,10 +3,10 @@ import img1 from './assets/images/img1.png';
 import { motion } from 'framer-motion';
 import Services from './pages/services';
 import Contact from './pages/contact';
-import Projects from './pages/projects';
+import Projects from './pages/Projects';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
-import About2 from './pages/About';
+
 
 
 
