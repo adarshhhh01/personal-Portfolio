@@ -1,11 +1,11 @@
 
 import img1 from './assets/images/img1.png';
 import { motion } from 'framer-motion';
-import Services from './pages/services';
-import Contact from './pages/contact';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
 import Projects from './pages/Projects';
-import Footer from './components/footer';
-import Navbar from './components/navbar';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 
 
