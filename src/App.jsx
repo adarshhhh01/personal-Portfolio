@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
 
